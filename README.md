@@ -120,7 +120,7 @@ Industry research and Snowflake customer outcomes:
 - **Failed deliveries cost Philippine e-commerce ₱28B annually (returns + redelivery)** — [DTI Philippines](https://www.dti.gov.ph/negosyo/e-commerce/)
 - **H3 geospatial optimization reduces delivery costs 15-25% in complex geographies** — [Uber Engineering](https://www.uber.com/en-PH/blog/h3/)
 - **Demand forecasting improves fleet utilization 20-30% during peak periods** — [McKinsey Logistics](https://www.mckinsey.com/industries/travel-logistics-and-infrastructure/our-insights)
-
+- **Instacart** (Snowflake customer): serves 1.4B+ data points daily on Snowflake for real-time personalization across 80K+ retail locations -- [snowflake.com/customers/instacart](https://www.snowflake.com/en/customers/all-customers/case-study/instacart/)
 
 ## Key Demo Numbers
 
