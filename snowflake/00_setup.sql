@@ -1,16 +1,13 @@
--- ============================================================================
--- Last-Mile Delivery Optimization & Geospatial Intelligence
--- Philippine archipelago logistics: 7,641 islands, 180M people — Snowflake uses H3 geospatial indexing to optimize last-mile delivery, ML.FORECAST to predict volumes, and Location Service integration for real-time routing intelligence.
--- ============================================================================
-USE ROLE ACCOUNTADMIN;
-CREATE DATABASE IF NOT EXISTS DELIVERY_LOGISTICS;
-CREATE WAREHOUSE IF NOT EXISTS LOGISTICS_WH WAREHOUSE_SIZE = 'MEDIUM' AUTO_SUSPEND = 120 AUTO_RESUME = TRUE;
-USE DATABASE DELIVERY_LOGISTICS;
-CREATE SCHEMA IF NOT EXISTS RAW;
-CREATE SCHEMA IF NOT EXISTS CURATED;
-CREATE SCHEMA IF NOT EXISTS ML;
-CREATE SCHEMA IF NOT EXISTS AI;
-CREATE SCHEMA IF NOT EXISTS SEARCH;
-CREATE SCHEMA IF NOT EXISTS APP;
+-- Generated from generator/demo_specs/aws-philippines-retail-delivery.json
+-- Regenerate with: python3 generator/gen_repo_docs.py aws-philippines-retail-delivery
+-- This is the schema that is actually deployed for PH_RETAIL_DELIVERY.
 
-USE WAREHOUSE LOGISTICS_WH;
+-- PH_RETAIL_DELIVERY  (Last-Mile Delivery Optimization & Geospatial Intelligence)
+-- generated from generator/demo_specs/aws-philippines-retail-delivery.json - do not hand-edit
+CREATE DATABASE IF NOT EXISTS PH_RETAIL_DELIVERY;
+CREATE SCHEMA IF NOT EXISTS PH_RETAIL_DELIVERY.RAW;
+CREATE SCHEMA IF NOT EXISTS PH_RETAIL_DELIVERY.CURATED;
+CREATE SCHEMA IF NOT EXISTS PH_RETAIL_DELIVERY.APP;
+USE DATABASE PH_RETAIL_DELIVERY;
+
+-- 5 real regions; entity names carry their region so the two always agree
