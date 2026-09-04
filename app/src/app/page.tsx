@@ -53,6 +53,7 @@ export default function HomePage() {
         <div className="lg:col-span-1">
           <GeoMap
             country="philippines"
+            regions={data?.regions}
             markers={[{"label": "Quezon City", "value": "Hub: 4.2K orders/hr", "color": "blue", "size": "lg"}, {"label": "Makati", "value": "Hub: 2.8K orders/hr", "color": "green", "size": "lg"}, {"label": "Cebu", "value": "Hub: 1.2K orders/hr", "color": "green", "size": "md"}, {"label": "Davao", "value": "Hub: 800 orders/hr", "color": "amber", "size": "md"}]}
             routes={[]}
             title="Geographic Overview"
