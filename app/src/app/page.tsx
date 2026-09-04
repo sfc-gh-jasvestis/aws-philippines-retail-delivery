@@ -53,6 +53,7 @@ export default function HomePage() {
         <div className="lg:col-span-1">
           <GeoMap
             country="philippines"
+            labels={{ entity: 'Hubs', event: 'Location Pings', alert: 'Failed Drops' }}
             regions={data?.regions}
             markers={[{"label": "Quezon City", "value": "Hub: 4.2K orders/hr", "color": "blue", "size": "lg"}, {"label": "Makati", "value": "Hub: 2.8K orders/hr", "color": "green", "size": "lg"}, {"label": "Cebu", "value": "Hub: 1.2K orders/hr", "color": "green", "size": "md"}, {"label": "Davao", "value": "Hub: 800 orders/hr", "color": "amber", "size": "md"}]}
             routes={[]}
@@ -83,8 +84,13 @@ export default function HomePage() {
         columns={[
           { key: 'id', header: '#' },
           { key: 'name', header: 'Hub' },
+          { key: 'region', header: 'Region' },
           { key: 'status', header: 'SLA' },
-          { key: 'value', header: 'Deliveries/Day' },
+          { key: 'm1', header: 'Deliveries/Day' },
+          { key: 'm2', header: 'Delivery Time' },
+          { key: 'm3', header: 'Fuel Cost Delivery' },
+          { key: 'events', header: 'Location Pings' },
+          { key: 'alerts', header: 'Failed Drops' },
         ]}
         data={data?.entities || []}
         title="Hub Performance"
